@@ -1,0 +1,19 @@
+sentenceAlternativeTemplate: 'Poprawna forma, to {first} lub {second}'
+sentenceNoAlternativeTemplate: 'Poprawna forma, to {first}'
+incorrectWords: '&cNapisales z bledami ortograficznymi.'
+forms:
+  - "bende:'będę':'bede'"
+  - "bul:'ból':'bol'"
+  - "wspulczuje:'współczuję';'wspolczuje'"
+  - "żądzę:'rządzę':'rzadze'"
+  - "muj:'mój':'moj'"
+  - "rządam:'żądam':'żądam'"
+  - "niewiem:'nie wiem'"
+  - "napewno:'w ogóle':'w ogole'"
+  - "wogule:'w ogóle':'w ogole'"
+  - "wogole:'w ogóle':'w ogole'"
+  - "jusz:'już':'juz'"
+  - "weszłem:'wszedłem''wszedlem'"
+  - "weszlem:'wszedłem':'wszedlem'"
+  - "wezi:'weź'"
+  - "gupi"
