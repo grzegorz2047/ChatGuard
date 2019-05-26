@@ -3,3 +3,7 @@ name: ChatGuard
 version: 0.0.1
 api-version: 1.14
 author: grzegorz2047
+commands:
+  chatguard:
+    description: Komendy pluginu
+    aliases: [cg]

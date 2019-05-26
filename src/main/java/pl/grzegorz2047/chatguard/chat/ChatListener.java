@@ -4,18 +4,17 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+import pl.grzegorz2047.chatguard.ConfigLoader;
 
-import java.util.Map;
 import java.util.StringTokenizer;
 
 public class ChatListener implements Listener {
 
-    private final String incorectWords;
-    private Map<String, String> messages;
 
-    public ChatListener(Map<String, String> messages, String incorrectWords) {
-        this.messages = messages;
-        this.incorectWords = incorrectWords;
+    private final ConfigLoader configLoader;
+
+    public ChatListener(ConfigLoader configLoader) {
+        this.configLoader = configLoader;
     }
 
     @EventHandler
@@ -25,9 +24,9 @@ public class ChatListener implements Listener {
         StringTokenizer tokenizer = new StringTokenizer(message, " ,.\t!-");
         while (tokenizer.hasMoreTokens()) {
             String token = tokenizer.nextToken();
-            String value = messages.get(token);
+            String value = configLoader.getMessages().get(token);
             if (value != null) {
-                player.sendMessage(ChatUtils.formatChat(incorectWords));
+                player.sendMessage(ChatUtils.formatChat(configLoader.getIncorrectWordsMsg()));
                 player.sendMessage(ChatUtils.formatChat(value));
                 e.setCancelled(true);
                 return;
