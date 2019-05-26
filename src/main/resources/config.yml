@@ -1,4 +1,4 @@
-sentenceAlternativeTemplate: 'Poprawna forma, to {first} lub {second}'
+sentenceAlternativeTemplate: 'Poprawna forma, to {first} lub dopuszczalna {second}'
 sentenceNoAlternativeTemplate: 'Poprawna forma, to {first}'
 incorrectWords: '&cNapisales z bledami ortograficznymi.'
 forms:
@@ -6,14 +6,25 @@ forms:
   - "bul:'ból':'bol'"
   - "wspulczuje:'współczuję';'wspolczuje'"
   - "żądzę:'rządzę':'rzadze'"
+  - "żadze:'rządzę':'rzadze'"
   - "muj:'mój':'moj'"
   - "rządam:'żądam':'żądam'"
+  - "rzadam:'żądam':'żądam'"
   - "niewiem:'nie wiem'"
   - "napewno:'w ogóle':'w ogole'"
   - "wogule:'w ogóle':'w ogole'"
   - "wogole:'w ogóle':'w ogole'"
   - "jusz:'już':'juz'"
+  - "jurz:'już':'juz'"
   - "weszłem:'wszedłem''wszedlem'"
   - "weszlem:'wszedłem':'wszedlem'"
-  - "wezi:'weź'"
+  - "podruz:'podróż':'podroz'"
+  - "bendzie:'będzie':'bedzie'"
+  - "hyba:'chyba'"
+  - "itemuw:'itemów'"
+  - "hatki:'chatki'"
+  - "hatka:'chatka'"
+  - "diamentuw:'diamentów':'diamentow'"
+  - "surowcuw:'surowców':'surowcow'"
+  - "gure:'górę':'gore'"
   - "gupi"
